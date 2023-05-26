@@ -19,18 +19,18 @@ class Node:
                 return
 
     def search(self, val):
-        if val==self.value:
-            return str(val)+" is found"
+        if val == self.value:
+            return str(val)
         elif val < self.value:
             if self.left:
                 return self.left.search(val)
             else:
-                return str(val)+" is not found"
+                return "Value is not found"
         else:
             if self.right:
                 return self.right.search(val)
             else:
-                return str(val)+" is not found" 
+                return "Valueis not found" 
        
             
     def display(self):
