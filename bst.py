@@ -36,7 +36,7 @@ class Node:
     def display(self):
         if self.left:
             self.left.display()
-        print( self.value),
+        print(self.value)
         if self.right:
             self.right.display()
 
